@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            html,body {
+                margin:0; 
+                padding:0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .buttons {
+                display: -webkit-flex; /* Safari */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 100px;
+            }
+
+            button {
+                font-size: 28px;
+                background: white;
+                color: #111111;
+                width: auto;
+                height: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="buttons">
+            <button id="method1">method1</button>
+            <button id="method2">method2</button>
+            <button id="method3">method3</button>
+        </div>
+
+        <script>
+            document.getElementById('method1').addEventListener('click', function () {
+                window.Test.method1();
+            },true)
+
+            document.getElementById('method2').addEventListener('click', function () {
+                window.Test.method2();
+            },true)
+
+            document.getElementById('method3').addEventListener('click', function () {
+                window.Test.method3();
+            },true)
+            // function onMethod1() {
+            //     window.Test.method1();
+            // }
+
+            // function onMethod1() {
+            //     window.Test.method2();
+            // }
+
+            // function onMethod1() {
+            //     window.Test.method3();
+            // }
+        </script>
+    </body>
+</html>
